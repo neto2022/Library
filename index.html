@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,17 @@
     <link rel="stylesheet" href="/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <label for="BookName">Type the Book's name:</label>
+    <input type="text" id="BookName" name="BookName">
+    <label for="BookRead">Has the book been read?</label>
+    <input type="checkbox" id="BookRead" name="BookRead">
+    <button type="submit" id="BookUser">New Book</button>
+
+    <div>
+        <p id="books"></p>
+    </div>
 </body>
 <script src="/script.js"></script>
 </html>
