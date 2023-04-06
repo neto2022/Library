@@ -11,7 +11,7 @@ class Book {
 }
 
 function addToLibrary() {
-  const temp = document.getElementById('books');
+  const temp = document.getElementById('books-left');
   temp.textContent = myLibrary;
   temp.innerHTML = myLibrary.join('<br>');
 }
