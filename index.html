@@ -14,17 +14,22 @@
 
 <body>
     <div id="center">
-        <div id="books-right">
-            <label for="BookName">Type the Book's name:</label>
-            <input type="text" id="BookName" name="BookName" class="btn">
-            <label for="BookRead">Has the book been read?</label>
-            <input type="checkbox" id="BookRead" name="BookRead" class="btn">
+        <div id="books-left" class="form-row">
+            <div class="form-group">
+                <label for="BookName">Type the Book's name:</label>
+                <input type="text" id="BookName" name="BookName" class="btn">
+            </div>
+            <div class="form-group">
+                <label for="BookRead">Has the book been read?</label>
+                <input type="checkbox" id="BookRead" name="BookRead" class="btn">
+            </div>
             <button type="submit" id="BookUser" class="btn btn-dark">New Book</button>
         </div>
-        <div id="books-left"></div>
+        <div id="books-right"></div>
     </div>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>

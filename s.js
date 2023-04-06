@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 const myLibrary = []; // saves books the user inputed
 const inputUser = document.getElementById('BookUser');
 
@@ -13,7 +12,8 @@ class Book {
 
 function addToLibrary(paragraph) {
   const lastBook = myLibrary[myLibrary.length - 1];
-  paragraph.textContent = lastBook;
+  const bookText = `${lastBook[0]} - ${lastBook[1]}`;
+  paragraph.textContent = bookText;
 }
 
 function addButton() {
@@ -26,14 +26,15 @@ function addButton() {
   const button = document.createElement('button');
   button.textContent = 'Remover';
 
-  booksRight.appendChild(button);
+  paragraph.appendChild(button);
 
+  booksRight.appendChild(paragraph);
   button.addEventListener('click', () => {
-    booksRight.removeChild(button);
     booksRight.removeChild(paragraph);
   });
   addToLibrary(paragraph);
 }
+
 inputUser.addEventListener('click', () => {
   const tempName = document.getElementById('BookName').value;
   let tempRead = document.getElementById('BookRead').checked;
